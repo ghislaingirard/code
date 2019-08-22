@@ -34,6 +34,14 @@ Replace field: alt="$1" title="$1"
         </code></pre>
       </details>
     </div>
+    <div class="snippet">
+      <details>
+        <summary><span class="name">Adding attribute</span> <span class="lang">[JS]</span></summary>
+        <pre><code class="code js">
+          $('.field--name-field-wysiwyg').find('table').attr('data-tablesaw-mode','stack'); 
+        </code></pre>
+      </details>
+    </div>    
 
     <div class="snippet">
       <details>
@@ -44,6 +52,25 @@ first string|(second string)|(third string)
         </code></pre>
       </details>
     </div>
+
+    <div class="snippet">
+      <details>
+        <summary><span class="name">Find form, switch button function</span> <span class="lang">[JS]</span></summary>
+        <pre><code class="code js">
+          $(document).on("keydown",
+          "#edit-close-x", 
+            function(e) {           
+              if (e.keyCode ==
+              13 || 
+              e.which == 
+              13) {            
+              e.preventDefault();            
+              $('input#edit-close-x').click()          
+            }          
+          });
+        </code></pre>
+      </details>
+    </div> 
 
     <div class="snippet">
       <details>
