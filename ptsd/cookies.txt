@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+127.0.0.1	TRUE	/wordpress/	FALSE	1999999999	pll_language	en
+127.0.0.1	TRUE	/	FALSE	1999999999	PHPSESSID	3lijlen7utub1d3ilmkett1uhj
+
