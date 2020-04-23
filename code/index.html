@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Code Repository</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h1>Code Repository</h1>
+<div class="repo" id="repo">
+  <input class="search" placeholder="Search">
+  <span class="sort" data-sort="name">Sort by name</span>
+  <span class="sort" data-sort="lang">Sort by language</span>
+  <br><br>
+  <div class="list">
+    <!-- A -->
+    
+    <!-- C -->
+    <div class="snippet">
+      <details>
+        <summary><span class="name">Add Title Automatically Using Alt Tags</span> <span class="lang">[REGEX]</span></summary>
+        <pre><code class="code js">
+Find field: alt="([^"]+)"
+Replace field: alt="$1" title="$1"
+        </code></pre>
+      </details>
+    </div>
+    <div class="snippet">
+      <details>
+        <summary><span class="name">Adding attribute</span> <span class="lang">[JS]</span></summary>
+        <pre><code class="code js">
+          $('.field--name-field-wysiwyg').find('table').attr('data-tablesaw-mode','stack'); 
+        </code></pre>
+      </details>
+    </div>    
+
+    <div class="snippet">
+      <details>
+        <summary><span class="name">Combine Multiple Regex Strings</span> <span class="lang">[REGEX]</span></summary>
+        <pre><code class="code js">
+first string|(second string)|(third string)
+\s+style="[^"]*"|(</?div[^>]*>)|(</?tr[^>]*>)
+        </code></pre>
+      </details>
+    </div>
+
+    <div class="snippet">
+      <details>
+        <summary><span class="name">Find form, switch button function</span> <span class="lang">[JS]</span></summary>
+        <pre><code class="code js">
+          $(document).on("keydown",
+          "#edit-close-x", 
+            function(e) {           
+              if (e.keyCode ==
+              13 || 
+              e.which == 
+              13) {            
+              e.preventDefault();            
+              $('input#edit-close-x').click()          
+            }          
+          });
+        </code></pre>
+      </details>
+    </div> 
+
+    <div class="snippet">
+      <details>
+        <summary><span class="name">Open All External Links in a New Tab</span> <span class="lang">[JS]</span></summary>
+        <pre><code class="code js">
+jQuery(document).ready(function($) {
+  $('a').not('[href*="mailto:"], [href*="tel:"], [href*="#"], [href*=""] ').each(function () {
+    var mylink = new RegExp('/' + window.location.host + '/');
+    if ( ! mylink.test(this.href) ) {
+      $(this).attr('target', '_blank');
+      $(this).attr('rel', 'nofollow');
+    }
+  });
+});
+        </code></pre>
+      </details>
+    </div>
+
+<div class="snippet">
+      <details>
+        <summary><span class="name">Remove Attributes in HTML Page</span> <span class="lang">[REGEX]</span></summary>
+        <pre><code class="code">
+\s+class="[^"]*"
+        </code></pre>
+      </details>
+    </div>
+
+<div class="snippet">
+      <details>
+        <summary><span class="name">Remove Elements in HTML Page</span> <span class="lang">[REGEX]</span></summary>
+        <pre><code class="code js">
+&#60;/?div[^&#62;]*>
+        </code></pre>
+      </details>
+    </div>    
+
+    <div class="snippet">
+      <details>
+        <summary><span class="name">Remove Element ID on Web Page</span> <span class="lang">[JS]</span></summary>
+        <pre><code class="code js">
+if (window.location.href.indexOf("https://fcm.ca/home/programs/green-municipal-fund/funded-initiatives.htm") > -1) {
+document.getElementById("searchbox").style.display="none";
+        </code></pre>
+      </details>
+    </div>
+
+    <div class="snippet">
+      <details>
+        <summary><span class="name">Replace Code on Web Page</span> <span class="lang">[JS]</span></summary>
+        <pre><code class="code js">
+  document.body.innerHTML = document.body.innerHTML.replace(new RegExp('src="http://fast.wistia.net/embed/iframe', 'g'),'src="https://fast.wistia.net/embed/iframe')
+        </code></pre>
+      </details>
+    </div>    
+
+    <div class="snippet">
+      <details>
+        <summary><span class="name">UL with Multiple Column</span> <span class="lang">[CSS]</span></summary>
+        <pre><code class="code">
+  ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+        </code></pre>
+      </details>
+    </div>   
+    
+  </div>
+
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scss.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
+
+
