@@ -34,6 +34,7 @@ Replace field: alt="$1" title="$1"
         </code></pre>
       </details>
     </div>
+    
     <div class="snippet">
       <details>
         <summary><span class="name">Adding attribute</span> <span class="lang">[JS]</span></summary>
@@ -42,6 +43,24 @@ Replace field: alt="$1" title="$1"
         </code></pre>
       </details>
     </div>    
+    
+    <div class="snippet">
+      <details>
+        <summary><span class="name">Alternative to Replace Code or Words on Webpage</span> <span class="lang">[JS]</span></summary>
+        <pre><code class="code js">
+          function coeptis() {
+
+            var elms = document.getElementsByClassName("contentBlock__metaInner contentBlock__metaInner--date"); 
+              for(var i = 0; i < elms.length; i++){
+                 if(elms[i].innerText.includes('Monday, April 1')){
+                    elms[i].innerText = elms[i].innerText.replace('Monday, April 1, 2024','Starting in April 2024');
+                 }
+              } 
+          }
+          window.onload = coeptis;
+        </code></pre>
+      </details>
+    </div>
 
     <div class="snippet">
       <details>
